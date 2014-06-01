@@ -17,7 +17,6 @@ I am always open to contribution, however you should follow a basic set of rules
 
 * Do not submit broken code. This can be best demonstrated by writing tests
 * Give clear information as to what your contribution does, and how it affects the rest of the application.
-* Follow git-flow
 
 ### Who do I talk to? ###
 
