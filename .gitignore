@@ -9,6 +9,9 @@
 /log/*.log
 /tmp
 
+# Ignore the gems
+/vendor/bundle
+
 # Ignore other unneeded files.
 database.yml
 doc/
