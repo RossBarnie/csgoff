@@ -14,6 +14,6 @@ database.yml
 doc/
 *.swp
 *~
-.sublime*
+*.sublime*
 .idea
 .secret
