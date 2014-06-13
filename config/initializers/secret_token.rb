@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Csgoff::Application.config.secret_key_base = '4c69031ffe3626ca2135e2721e3e01226d9130cb4e6f42774416da54b388cb9b9a4a820123a915773e231bde0882e7b1bcdebfbce9b509217ba2d5cc5233f761'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+Csgoff::Application.config.secret_key_base = secure_token
