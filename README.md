@@ -1,3 +1,5 @@
+[![Build Status](https://drone.io/bitbucket.org/RossBarnie/csgoff/status.png)](https://drone.io/bitbucket.org/RossBarnie/csgoff/latest)
+
 # README #
 
 ### What is this repository for? ###
