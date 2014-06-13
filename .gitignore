@@ -9,14 +9,12 @@
 /log/*.log
 /tmp
 
-# Ignore the gems
-/vendor/bundle
-
 # Ignore other unneeded files.
 database.yml
 doc/
 *.swp
 *~
-*.sublime*
+.project
+.DS_Store
 .idea
 .secret
