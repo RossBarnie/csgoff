@@ -28,6 +28,7 @@ group :test do
   gem 'cucumber', '1.2.5'
   gem 'cucumber-rails', require: false
   gem 'rake' #required for Travis
+  gem 'database_cleaner'
 end
 
 gem 'sass-rails', '4.0.1'
