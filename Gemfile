@@ -6,6 +6,10 @@ gem 'rails', '4.0.5'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'foundation-rails', '5.2.3.0'
 
+# JavaScript runtime
+gem 'execjs', '2.2.1'
+gem 'therubyracer', '0.12.1'
+
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
@@ -23,6 +27,7 @@ group :test do
   gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber', '1.2.5'
   gem 'cucumber-rails', require: false
+  gem 'rake' #required for Travis
 end
 
 gem 'sass-rails', '4.0.1'
@@ -37,6 +42,5 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end

@@ -1,4 +1,4 @@
-CS:GO Friend Finder [![Build Status](https://drone.io/bitbucket.org/RossBarnie/csgoff/status.png)](https://drone.io/bitbucket.org/RossBarnie/csgoff/latest)
+CS:GO Friend Finder
 ===================
 
 A web application to help players of Counter-Strike: Global Offensive find others to play with.
