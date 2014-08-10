@@ -1,5 +1,9 @@
 language: ruby
-bundler_args: --without development --deployment
+bundler_args: "--without development --deployment"
 rvm:
-    - 2.1.2
+- 2.1.2
 cache: bundler
+env:
+  global:
+  - secure: YsU/ADgeErK1cmtF2ihL8+2Kd0G8V3ZZBx6gyISKn2iD4vOVt2uh8+jCGVZpOqV+ST1mK5VBTgZZP1cnG/SZPzcFQesMNz8ZPHgmlhJrRpABq1ZD998albwAruXryZmKGgHQ6HP7q8l3HZnqsoyEoxYZf8URexjqae1Hqgm29Uc=
+  - secure: PDO33ODibu6lCWjqSW4YpMMfKIoSktw6x0uTc7VNDPwtehn1JDu7kVWrR2Nx1X6N2HGbWoJFi2XJbHMv54FbZbSJrQQUO3BsIwNpnHEMVrNogQB6ksoFyXE/OFmsknq61cIHz9/QIolLahuFu/WTc8ZVLgiObASZuV14J1OAnrI=
