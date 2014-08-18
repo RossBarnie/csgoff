@@ -29,6 +29,7 @@ group :test do
   gem 'rake' #required for Travis
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'faker'
 end
 
 group :production do
