@@ -2,11 +2,13 @@
 <p>Find stuff</p>
 
 <% if session.key? :current_user %>
-<h3>Current user:</h3>
-<%= image_tag session[:current_user][:image] %>
-<p><%= session[:current_user][:nickname] %></p>
-<p><%= session[:current_user][:uid] %></p>
+  <h3>Current user:</h3>
+  <%= image_tag session[:current_user][:image] %>
+  <p><%= session[:current_user][:nickname] %></p>
+  <p><%= session[:current_user][:uid] %></p>
+  <p><a href='/logout'>Logout</a></p>
 <% else %>
-<a href='/auth/steam'>
-<img src="http://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png" alt="Sign in through Steam"></a>
+    <a href='/auth/steam'>
+      <img src="http://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png" alt="Sign in through Steam">
+    </a>
 <% end %>
