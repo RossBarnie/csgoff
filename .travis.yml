@@ -9,3 +9,6 @@ env:
   - secure: PDO33ODibu6lCWjqSW4YpMMfKIoSktw6x0uTc7VNDPwtehn1JDu7kVWrR2Nx1X6N2HGbWoJFi2XJbHMv54FbZbSJrQQUO3BsIwNpnHEMVrNogQB6ksoFyXE/OFmsknq61cIHz9/QIolLahuFu/WTc8ZVLgiObASZuV14J1OAnrI=
 before_install: cp config/secrets.yml.sample config/secrets.yml
 before_script: bundle exec rake db:migrate RAILS_ENV=test
+addons:
+  code_climate:
+    repo_token: 08a826fd4c63d5b60628fe6d0ef59fd4a542c1ac68fd0fdc770d5e3a85d3edde
