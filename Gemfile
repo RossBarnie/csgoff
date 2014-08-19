@@ -30,7 +30,8 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'faker'
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'simplecov', '0.9.0'
+  gem 'coveralls', '0.7.1', require: false
 end
 
 group :production do
