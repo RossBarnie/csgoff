@@ -250,6 +250,7 @@ DEPENDENCIES
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
   launchy
+  minitest
   omniauth-steam (= 1.0.3)
   rails (= 4.1.4)
   rails_12factor (= 0.0.2)

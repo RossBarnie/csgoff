@@ -32,6 +32,7 @@ group :test do
   gem 'faker'
   gem 'simplecov', '0.9.0'
   gem 'coveralls', '0.7.1', require: false
+  gem 'minitest'
 end
 
 group :production do
