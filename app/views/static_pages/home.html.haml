@@ -1,0 +1,13 @@
+%h1 Counter-Strike: Global Offensive Friend Finder
+
+%p Find stuff
+
+- if session.key? :current_user
+  %h3 Current user:
+  = image_tag session[:current_user][:image]
+  %p= session[:current_user][:nickname]
+  %p= session[:current_user][:uid]
+  %p %a(href='/logout')Logout
+- else
+  %a(href: '/auth/steam')
+    %img(src: "http://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_large_noborder.png" alt="Sign in through Steam")
