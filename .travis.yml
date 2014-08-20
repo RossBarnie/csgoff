@@ -7,8 +7,13 @@ env:
   global:
   - secure: YsU/ADgeErK1cmtF2ihL8+2Kd0G8V3ZZBx6gyISKn2iD4vOVt2uh8+jCGVZpOqV+ST1mK5VBTgZZP1cnG/SZPzcFQesMNz8ZPHgmlhJrRpABq1ZD998albwAruXryZmKGgHQ6HP7q8l3HZnqsoyEoxYZf8URexjqae1Hqgm29Uc=
   - secure: PDO33ODibu6lCWjqSW4YpMMfKIoSktw6x0uTc7VNDPwtehn1JDu7kVWrR2Nx1X6N2HGbWoJFi2XJbHMv54FbZbSJrQQUO3BsIwNpnHEMVrNogQB6ksoFyXE/OFmsknq61cIHz9/QIolLahuFu/WTc8ZVLgiObASZuV14J1OAnrI=
+  - secure: fsfRgEfcUXm2qjb0qjWEzx8hUeFXtQp3P2ja3XpsSo0gQFkdsCST5QkNBjSUT8PcFe24aQpm8z7APmsHXyRQSBm4jUdMDEURJxYGZbMGquKkmz8sc3ae4NxR/g4NX7Vtz7wOWxetxi0G9g8r/5VBJqUvfABUUNCSJIfEx8uoR4U=
 before_install: cp config/secrets.yml.sample config/secrets.yml
 before_script: bundle exec rake db:migrate RAILS_ENV=test
 addons:
   code_climate:
     repo_token: 08a826fd4c63d5b60628fe6d0ef59fd4a542c1ac68fd0fdc770d5e3a85d3edde
+branches:
+  only:
+  - master
+  - develop
